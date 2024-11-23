@@ -1,0 +1,2 @@
+Official tsconfig Docs: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html
+Official Compiler Options Docs: https://www.typescriptlang.org/docs/handbook/compiler-options.html
