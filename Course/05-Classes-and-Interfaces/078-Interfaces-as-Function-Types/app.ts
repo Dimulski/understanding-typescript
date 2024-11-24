@@ -10,8 +10,7 @@ add = (n1: number, n2: number) => {
 };
 
 interface Named {
-  readonly name?: string;
-  outputName?: string;
+  readonly name: string;
 }
 
 interface Greetable extends Named {
@@ -19,27 +18,21 @@ interface Greetable extends Named {
 }
 
 class Person implements Greetable {
-  name?: string;
+  name: string;
   age = 30;
 
-  constructor(n?: string) {
-    if (n) {
-      this.name = n;
-    }
+  constructor(n: string) {
+    this.name = n;
   }
 
   greet(phrase: string) {
-    if (this.name) {
-      console.log(phrase + ' ' + this.name);
-    } else {
-      console.log('Hi!');
-    }
+    console.log(phrase + ' ' + this.name);
   }
 }
 
 let user1: Greetable;
 
-user1 = new Person();
+user1 = new Person('Max');
 // user1.name = 'Manu';
 
 user1.greet('Hi there - I am');
