@@ -1,0 +1,1 @@
+Revisit decorators section and implement all example decorators manually.
